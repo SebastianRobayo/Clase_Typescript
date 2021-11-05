@@ -1,14 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Login from './components/Login';
-import DashboardClient from './components/DashboardClient'
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import DashboardClient from './components/DashboardClient';
 
 function App() {
   return (
-    <Router>
-      <Route exact path="/" component={DashboardClient}></Route>
-      <Route exact path="/login" component={Login}></Route>
-    </Router>
+    <Fragment>
+      <DashboardClient/>
+      <Login/>
+    </Fragment>
   );
 }
 
