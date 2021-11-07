@@ -14,8 +14,8 @@ const dbOptions = {
 }
 
 // middlewares
-app.use(myconn(mysql, dbOptions, 'single'));
-app.use(express.json());
+// app.use(myconn(mysql, dbOptions, 'single'));
+// app.use(express.json());
 
 // routes
 app.get('/', (req,res) => {

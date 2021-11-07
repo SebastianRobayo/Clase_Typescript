@@ -16,8 +16,14 @@ routes.get('/', (req,res) => {
 routes.post('/', (req,res) => {
     req.getConnection((err, conn) => {
         if(err) return res.send(err);
+        console.log("Connected!");
 
-        conn.query('INSERT INTO productos set ?', [req.body], (err, rows) => {
+        let titulo = req.body.titulo;
+        let imagen = req.body.imagen;
+        let descripcion = req.body.descripcion;
+        let precio = req.body.precio;
+
+        conn.query(`INSERT INTO productos (titulo,imagen,descripcion,precio) VALUES ('${titulo}','${imagen}','${descripcion}','${precio}')`, [req.body], (err, rows) => {
             if(err) return res.send(err);
 
             res.send('Articulo agregado');
