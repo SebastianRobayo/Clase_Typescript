@@ -34,27 +34,27 @@ function DashboardAdmin() {
                                 <h4 className="text-center">Ingreso de Productos</h4>
                             </div>
                             <div className="card-body">
-                                <form>
+                                <form action="http://localhost:5000/api " method="POST">
                                     <div className="mb-3">
                                         <label className="form-label">Titulo del producto</label>
-                                        <input type="text" className="form-control" id="titulo" placeholder="Ingrese los datos"/>
+                                        <input type="text" required className="form-control" id="titulo" placeholder="Ingrese los datos"/>
                                     </div>
                                     <div className="mb-3">
                                         <label className="form-label">Ingrese la imagen</label>
-                                        <input type="file" className="form-control" id="imagen" placeholder="Ingrese los datos"/>
+                                        <input type="file" required className="form-control" id="imagen" placeholder="Ingrese los datos"/>
                                     </div>
                                     <div className="mb-3">
                                         <label className="form-label">Ingrese la descripcón</label>
-                                        <input type="text" className="form-control" id="descripcion" placeholder="Ingrese los datos"/>
+                                        <input type="text" required className="form-control" id="descripcion" placeholder="Ingrese los datos"/>
                                     </div>
                                     <div className="mb-3">
                                         <label className="form-label">Ingrese la valor</label>
-                                        <input type="number" className="form-control" id="valor" placeholder="Ingrese los datos"/>
+                                        <input type="number" required className="form-control" id="valor" placeholder="Ingrese los datos"/>
+                                    </div>
+                                    <div className="card-footer">
+                                        <button type="submit" className="form-control btn btn-success">Guardar</button>
                                     </div>
                                 </form>                   
-                            </div>
-                            <div className="card-footer">
-                                <button type="submit" className="form-control btn btn-success">Guardar</button>
                             </div>
                         </div>
                     </div>
