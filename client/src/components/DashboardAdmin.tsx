@@ -63,14 +63,16 @@ function DashboardAdmin() {
                         <thead>
                             <tr>
                                 <th>Titulo</th>
+                                <th>Imagen</th>
                                 <th>Descripción</th>
-                                <th>Fecha de creación</th>
+                                <th>Precio</th>
                                 <th>Editar</th>
                             </tr>
                         </thead>
                         <tbody>
                             
                                 <tr>
+                                    <td></td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
