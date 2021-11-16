@@ -22,7 +22,7 @@ function Header() {
                     Categorias
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><Link className="dropdown-item" to="#">Procesadores</Link></li>
+                    <li><Link className="dropdown-item" to="#Procesadores">Procesadores</Link></li>
                     <li><Link className="dropdown-item" to="#">Placas madre</Link></li>
                     <li><Link className="dropdown-item" to="#">Targetas graficas</Link></li>
                     <li><Link className="dropdown-item" to="#">Discos duros y ssd</Link></li>
